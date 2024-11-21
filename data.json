@@ -1,0 +1,15 @@
+{
+    "Name": "Modelo de Detecção de Nódulos",
+    "Descript": "Este projeto utiliza técnicas de aprendizado de máquina para detectar artefatos metálicos em imagens de tomografia computadorizada (CT). O modelo foi desenvolvido com base em arquiteturas avançadas, como DenseNet, e inclui visualização com Grad-CAM para melhorar a interpretabilidade. O objetivo é auxiliar na melhoria da qualidade das imagens médicas, facilitando diagnósticos mais precisos e reduzindo o impacto dos artefatos metálicos em exames médicos.",
+    "Models": {
+        "DenseNet": "./Models/DenseNet121"    
+    },
+    "Authors": ["João Vitor Alcantara", "Bruna Garpes"],
+    "Outputs": [ "Aparelho Ortodôntico", "Clips Cirúrgicos", "Stents Intracranianos", "Pinos de Fissura", "Placas e Parafusos Cranianos", "Proteses Faciais", "Próteses Oculares", "Dispositivos de Neuroestimulação", "Expansores Cranianos", "Outros", "Não consigo identificar"],
+    "Subjects": {
+        "000001": {"path": "./data/img_0001.nii.gz", "label_real": "No Artifact", "label_predicted": "With Artifact"},
+        "000002": {"path": "./data/img_0002.nii.gz", "label_real": "With Artifact", "label_predicted": "No Artifact"},
+        "000003": {"path": "./data/img_0003.nii.gz", "label_real": "With Artifact", "label_predicted": "With Artifact"}
+    },
+    "Anotadores": ["Jovi", "Bruna"]
+}

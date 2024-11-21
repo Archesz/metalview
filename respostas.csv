@@ -1,0 +1,8 @@
+Subject,Label Real,Predição,Caso,Predição Correta,Tipo de Artefato,Comentário
+000001,No Artifact,Artifact,Falso Positivo,Sim,Aparelho Ortodôntico,
+000002,Artifact,No Artifact,Falso Negativo,Sim,Marcapasso,teste
+000002,Artifact,No Artifact,Falso Negativo,Sim,Parafusos de Placa,teste
+000001,No Artifact,Artifact,Falso Positivo,Sim,"['Implante Dental', 'Clips Cirúrgicos', 'Eletrodos', 'Stents Intracranianos', 'Pinos de Fissura']",
+000001,No Artifact,With Artifact,Falso Positivo,,Não,
+000001,No Artifact,With Artifact,Falso Positivo,,Não,
+000001,No Artifact,With Artifact,Falso Positivo,,Não,,Bruna
